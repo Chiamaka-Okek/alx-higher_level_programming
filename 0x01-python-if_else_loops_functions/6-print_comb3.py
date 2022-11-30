@@ -5,3 +5,4 @@ for x in range(0, 10):
             print("{}{}, ".format(x, y), end='')
         elif x > 7 and x != y and y > x:
             print("{}{} ".format(x, y), end='')
+print()
