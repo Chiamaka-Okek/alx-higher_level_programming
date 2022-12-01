@@ -9,6 +9,6 @@ if __name__ == "__main__":
             str1 = str(x) + ": " + str(argv[x])
             print("{}".format(str1))
     elif len(argv) == 2:
-        print("{} argument".format(len(argv) - 1))
+        print("{} argument:".format(len(argv) - 1))
         str2 = str(len(argv) - 1) + ": " + str(argv[1])
         print("{}".format(str2))
