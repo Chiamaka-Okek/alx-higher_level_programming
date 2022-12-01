@@ -12,3 +12,4 @@ if __name__ == "__main__":
         print((len(argv) - 1), "argument:")
         str2 = str((len(argv) - 1)) + ": " + str(argv[1]) 
         print(str2)
+print()
