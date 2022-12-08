@@ -9,5 +9,5 @@ def best_score(a_dictionary):
         for x in a_dictionary:
             if a_dictionary[x] == score[-1]:
                 return x
-            else:
-                return
+    else:
+        return
