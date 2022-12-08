@@ -2,5 +2,8 @@
 def number_keys(a_dictionary):
     count = 0
     for x in range(len(list(a_dictionary))):
-        count = count + x
+        if x == 0:
+            return
+        else:
+            count = count + x
     return count
