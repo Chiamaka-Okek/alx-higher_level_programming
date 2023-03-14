@@ -7,5 +7,5 @@ def new_in_list(my_list, idx, element):
         y = []
         for x in my_list:
             y.append(x)
-            y[idx] = element
-            return(y)
+        y[idx] = element
+        return(y)
