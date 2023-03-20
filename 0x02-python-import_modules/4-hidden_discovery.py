@@ -1,8 +1,7 @@
 #!/usr/bin/python3
+import hidden_4
 if __name__ == "__main__":
-    elements = hidden_4.pyc.split()
+    elements = dir(hidden_4)
     for x in elements:
-        if x[0] == '_':
-            exit(1)
-        else:
+        if x[:2] != '__':
             print(x)
