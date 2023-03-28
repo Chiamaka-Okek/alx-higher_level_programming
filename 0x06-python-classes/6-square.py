@@ -5,6 +5,7 @@ two public instances method
 
 
 class Square:
+    """ This defines the class square """
     pass
 
     def __init__(self, size=0, position=(0, 0)):

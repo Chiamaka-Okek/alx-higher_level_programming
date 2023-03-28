@@ -4,6 +4,7 @@ public instance method """
 
 
 class Square:
+    """ This defines the class square """
     pass
 
     def __init__(self, size=0):
@@ -39,7 +40,7 @@ class Square:
     def my_print(self):
         """ Prints to stdout the square in # character """
         if self.__size == 0:
-            print("")
+            print()
         else:
             for i in range(self.__size):
                 print("#" * self.__size)
