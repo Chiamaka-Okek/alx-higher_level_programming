@@ -7,7 +7,7 @@ class MyList(list):
     def __init__(self):
         """ This initializes the class MyList using
         the super class list """
-        super().__init__()
+
     def print_sorted(self):
         """ This module sorts a list in ascending order """
         print(sorted(self))
