@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Define a subclass Square that inherits from Rectangle """
+""" This is a subclass that inherits from class Rectangle """
 Rectangle = __import__('9-rectangle').Rectangle
 
 
@@ -8,10 +8,14 @@ class Square(Rectangle):
     def __init__(self, size):
         """ Initializes the class """
         super().integer_validator("size", size)
-        super().__init__(size, size)
         self.__size = size
 
     def area(self):
-        """ Implement area """
+        """ Implements area """
         a = self.__size * self.__size
         return(a)
+
+    def __str__(self):
+        """ Defines the module str """
+        return("[Square]" + " " + str(self.__size) + "/" +
+               str(self.__size))
