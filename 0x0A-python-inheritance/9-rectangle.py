@@ -7,6 +7,7 @@ class BaseGeometry:
     def area(self):
         """ Base area without implementation """
         raise Exception("area() is not implemented")
+
     def integer_validator(self, name, value):
         """ Checks the validity of the value parameter """
         if type(value) != int:
@@ -16,15 +17,20 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """ Defines the subclass """
     def __init__(self, width, height):
+        """ Initializes the subclass """
         super().integer_validator("width", width)
         self.__width = width
         super().integer_validator("height", height)
         self.__height = height
 
     def area(self):
+        """ Implements the area module """
         a = self.__width * self.__height
         return(a)
 
     def __str__(self):
-        return("[Rectangle]" + " " + str(self.__width) + "/" + str(self.__height))
+        """ Defines the module str """
+        return("[Rectangle]" + " " + str(self.__width) + "/"
+               + str(self.__height))
