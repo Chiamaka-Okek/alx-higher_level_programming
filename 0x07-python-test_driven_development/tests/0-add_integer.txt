@@ -16,3 +16,6 @@ case 3: Sum more than two integers
 
 case 4: Sum one negative and one positive integer
 >>> add_integers(3, -2)
+
+case 4: Passing no argument
+>>> add_integer()
