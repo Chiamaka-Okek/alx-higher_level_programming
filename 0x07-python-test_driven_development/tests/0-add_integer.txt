@@ -19,3 +19,15 @@ case 4: Sum one negative and one positive integer
 
 case 4: Passing no argument
 >>> add_integer()
+
+case 5: Passing first argument as a string
+>>> add_integer('a', 4)
+Traceback (most recent call last)
+...
+TypeError: a must be an integer
+
+case 6: Passing second argument as a string
+>>> add_integer(4, 'b')
+Traceback (most recent call last)
+...
+TypeError: b must be an integer
